@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream JEJU</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <!-- 로고영역 -->
+            <div id="logo">
+                <a href="index.html">
+                <h1>Dream Jeju</h1>
+                </a>
+            </div>
+            <!-- nav 영역 -->
+            <nav>
+                <ul id="topmenu">
+                    <li><a href="#">단체 여행  <span>  ▼</span></a>
+                        <ul>
+                            <li><a href="">회사 연수</a></li>
+                            <li><a href="">수학 여행</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">맞춤 여행  <span>  ▼</span></a>
+                        <ul>
+                            <li><a href="#">4.3. 평화기행</a></li>
+                            <li><a href="#">성산읍 여행</a></li>
+                            <li><a href="#">힐링 워크샵</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">문의하기</a></li>
+                    <li><a href="#">예약하기</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 이미지 슬라이드쇼 -->
+        <div id="slideShow">
+            <div id="slides">
+                <img src="/images/photo-1.jpg" alt="">
+                <img src="/images/photo-2.jpg" alt="">
+                <img src="/images/photo-3.jpg" alt="">
+                <button id="prev"> &lang;</button>
+                <button id="next"> &rang;</button>
+            </div>
+        </div>
+        <!-- 콘텐츠 영역 -->
+        <div id="contents">
+            <!-- 탭 메뉴 -->
+            <div id="tabmenu">
+                <!-- 선택 탭 생성 -->
+                <input type="radio" id="tab1" name="tabs" checked>
+                <label for="tab1">공지사항</label>
+                <input type="radio" id="tab2" name="tabs">
+                <label for="tab2">갤러리</label>
+                <!-- 공지사항에 대한 내용 -->
+                <div id="notice" class="tabContent">
+                    <h2>공지사항 내용입니다.</h2>
+                    <ul>
+                        <li>사무실 이전했습니다.</li>
+                        <li>코로나19로 인한 휴관 안내</li>
+                        <li>[참가모집] 카약 체험에 초대합니다.</li>
+                        <li>[참가모집] 여름 방학 오름 체험단 모집합니다.</li>
+                        <li>여름 추천 여행지</li>
+                    </ul>
+                </div>
+                <!-- 갤러리 선택시 출력 내용 -->
+                <div id="gallery" class="tabContent">
+                <h2>갤러리 내용입니다.</h2>
+                    <ul>
+                        <li><img src="./images/img-1.jpg" alt=""></li>
+                        <li><img src="./images/img-2.jpg" alt=""></li>
+                        <li><img src="./images/img-3.jpg" alt=""></li>
+                        <li><img src="./images/img-1.jpg" alt=""></li>
+                        <li><img src="./images/img-2.jpg" alt=""></li>
+                        <li><img src="./images/img-3.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 퀵 링크 -->
+            <div id="links">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon1"></span>
+                            <p>평화기행</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon2"></span>
+                            <p>힐링 워크숍</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span id="quick-icon3"></span>
+                            <p>문의하기</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <!-- 푸터 영역 -->
+        <footer>
+            <div id="bottomMenu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">여행약관</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            <div id="sns">
+                <ul>
+                    <li><a href="#"><img src="/images/sns-1.png" alt=""></a></li>
+                    <li><a href="#"><img src="/images/sns-2.png" alt=""></a></li>
+                    <li><a href="#"><img src="/images/sns-3.png" alt=""></a></li>
+                </ul>
+            </div>
+        
+        </div>
+        <div id="addr">
+            <p>제주특별자치도 서귀포시 000동 000로 000길 12-14 (대표전화) 010-1234-1234</p>
+        </div>
+        </footer>
+        </div>
+    </div>
+    <script src="/js/slideshow.js"></script>
+</body>
+</html>
